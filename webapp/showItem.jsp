@@ -83,7 +83,7 @@
 				</td>
 			</tr>
 
-		</table>
+		</table> 
 		<div class="list">
 			<a href="listAution">Danh sách đấu giá</a>
 		</div>
