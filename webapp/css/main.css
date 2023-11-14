@@ -23,8 +23,9 @@ table {
 }
 
 th {
- background: blue;
+ background: skyblue;
 		border: 1px solid black;
+		text-align: right;
 		
 }
 

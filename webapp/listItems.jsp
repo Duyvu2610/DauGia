@@ -19,7 +19,7 @@
 	<c:set var="user" value="${sessionScope.user}" />
 	<div class="wrapper">
 		<div class="header">
-		<span>Chào <c:out value="${user.username}" />|</span>
+		<span>Chào <b style="color: blue;"><c:out value="${user.username}" /></b>|</span>
 			<a href="logout">Thoát</a>
 		</div>
 		<h2><b>Danh mục các mặt hàng đấu giá</b></h2>
