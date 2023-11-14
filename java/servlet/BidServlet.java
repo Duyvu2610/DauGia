@@ -57,7 +57,7 @@ public class BidServlet extends HttpServlet {
 			response.sendRedirect("listAution");
 		}else {
 			response.sendRedirect("auction?id=" + id);
-		} 
+		}  
 
 		
 	}
