@@ -1,8 +1,3 @@
-<%@page import="java.util.Locale"%>
-<%@page import="java.text.SimpleDateFormat"%>
-<%@page import="model.AuctionItem"%>
-<%@page import="model.User"%>
-<%@page import="java.util.Collection"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -70,7 +65,7 @@
 							<span>Giá đặt: <input type="text" name="price" style="margin-right: 4px">>=<fmt:formatNumber var="formattedNumber" value="${total}" type="number" pattern="#,##0.##" /><c:set var="formattedNumber"
 					value="${formattedNumber.replace(',', '.')}" />${formattedNumber}</span></span>
 							<input type="hidden" name="priceStep" value="${au.priceStep}">
-							<input type="hidden" name="total" value="${total}">
+							<input type="hidden" name="currentPrice" value="${au.currentPrice}">
 						</div>
 						<button type="submit" style="margin-left: 55px; margin-top: 4px">Đặt giá</button>
 					</form>

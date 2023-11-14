@@ -47,12 +47,12 @@ public class BidServlet extends HttpServlet {
 		
 		double price = Double.parseDouble(request.getParameter("price"));
 		double priceStep = Double.parseDouble(request.getParameter("priceStep"));
-		double total = Double.parseDouble(request.getParameter("total"));
+		double currentPrice = Double.parseDouble(request.getParameter("currentPrice"));
 		
 		String id = request.getParameter("id");
 		AuctionItem au = auctionService.getAuctionItem(Long.parseLong(id));
 		
-		if (price > total + priceStep) {
+		if (price > currentPrice + priceStep) {
 			auctionService.bid(user, au, price);
 			response.sendRedirect("listAution");
 		}else {
