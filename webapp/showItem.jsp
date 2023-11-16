@@ -62,7 +62,7 @@
 					<span><b>Thời gian còn lại:</b> ${au.duration}</span> <br> <br>
 					<form action="bid?id=<c:out value="${au.id}" />" method="post" class="form-login">
 						<div>
-							<span>Giá đặt: <input type="text" name="price" style="margin-right: 4px">>=<fmt:formatNumber var="formattedNumber" value="${total}" type="number" pattern="#,##0.##" /><c:set var="formattedNumber"
+							<span>Giá đặt: <input type="number" name="price" style="margin-right: 4px">>=<fmt:formatNumber var="formattedNumber" value="${total}" type="number" pattern="#,##0.##" /><c:set var="formattedNumber"
 					value="${formattedNumber.replace(',', '.')}" />${formattedNumber}</span></span>
 							<input type="hidden" name="priceStep" value="${au.priceStep}">
 							<input type="hidden" name="currentPrice" value="${au.currentPrice}">
